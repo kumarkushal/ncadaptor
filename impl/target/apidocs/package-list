@@ -1,0 +1,4 @@
+org.opendaylight.ncadaptor.impl
+org.opendaylight.yang.gen.v1.urn.opendaylight.params.xml.ns.yang.ncadaptor.impl.rev141210
+org.opendaylight.yang.gen.v1.urn.opendaylight.params.xml.ns.yang.ncadaptor.impl.rev141210.modules.module.configuration
+org.opendaylight.yang.gen.v1.urn.opendaylight.params.xml.ns.yang.ncadaptor.impl.rev141210.modules.module.configuration.ncadaptor

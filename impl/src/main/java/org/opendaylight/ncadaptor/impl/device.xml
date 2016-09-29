@@ -1,0 +1,10 @@
+<node-oper-data xmlns="urn:opendaylight:test">
+<oper-node>true</oper-node>
+<device-name>QFX</device-name>
+<device-family>OFSwitch</device-family>
+<yang-revision>2016-05-19</yang-revision>
+<deviceVendor>Juniper</deviceVendor>
+<deviceOS>JunOS</deviceOS>
+<deviceOSVersion>1.5</deviceOSVersion>
+<json-url></json-url>
+</node-oper-data>

@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opendaylight.odlparent.featuretest.SingleFeatureTest" time="58.272" tests="5" errors="4" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.101-b13"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/directv/ncadaptor"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/directv/ncadaptor"/>
+    <property name="java.runtime.version" value="1.8.0_101-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/home/directv/Applications/apache-maven-3.3.9/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="3.13.0-95-generic"/>
+    <property name="user.home" value="/home/directv"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="directv"/>
+    <property name="java.class.path" value="/home/directv/Applications/apache-maven-3.3.9/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_101"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/home/directv/Applications/apache-maven-3.3.9"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="installFeature" classname="installFeature(org.opendaylight.odlparent.featuretest.SingleFeatureTest)[repoUrl: file:/home/directv/ncadaptor/features/target/classes/features.xml, Feature: odl-ncadaptor-drools 1.0-SNAPSHOT]" time="10.618">
+    <error message="org.opendaylight.yang.gen.v1.urn.opendaylight.params.xml.ns.yang.ncadaptor.rev150105.get.node.instance.output.NodeOperDataBuilder not found by ncadaptor-drools [116]" type="java.lang.ClassNotFoundException">java.lang.ClassNotFoundException: org.opendaylight.yang.gen.v1.urn.opendaylight.params.xml.ns.yang.ncadaptor.rev150105.get.node.instance.output.NodeOperDataBuilder not found by ncadaptor-drools [116]
+	at org.apache.felix.framework.BundleWiringImpl.findClassOrResourceByDelegation(BundleWiringImpl.java:1532)
+	at org.apache.felix.framework.BundleWiringImpl.access$400(BundleWiringImpl.java:75)
+	at org.apache.felix.framework.BundleWiringImpl$BundleClassLoader.loadClass(BundleWiringImpl.java:1955)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.opendaylight.ncadaptor.drools.osgi.NcadaptorDroolsImpl.fireRulesKieSession(NcadaptorDroolsImpl.java:13)
+	at org.opendaylight.ncadaptor.drools.osgi.NcadaptorDroolsOsgiActivator.start(NcadaptorDroolsOsgiActivator.java:33)
+	at org.apache.felix.framework.util.SecureAction.startActivator(SecureAction.java:645)
+	at org.apache.felix.framework.Felix.activateBundle(Felix.java:2146)
+	at org.apache.felix.framework.Felix.startBundle(Felix.java:2064)
+	at org.apache.felix.framework.BundleImpl.start(BundleImpl.java:955)
+	at org.apache.felix.framework.BundleImpl.start(BundleImpl.java:942)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.startBundle(FeaturesServiceImpl.java:477)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.installFeatures(FeaturesServiceImpl.java:435)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.installFeature(FeaturesServiceImpl.java:375)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.installFeature(FeaturesServiceImpl.java:364)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.installFeature(FeaturesServiceImpl.java:347)
+	at Proxybc55e273_6390_41e8_b349_31ee5c9bc8cc.installFeature(Unknown Source)
+	at org.opendaylight.odlparent.featuretest.SingleFeatureTest.installFeature(SingleFeatureTest.java:207)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.ops4j.pax.exam.invoker.junit.internal.ContainerTestRunner.runChild(ContainerTestRunner.java:68)
+	at org.ops4j.pax.exam.invoker.junit.internal.ContainerTestRunner.runChild(ContainerTestRunner.java:37)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.ops4j.pax.exam.invoker.junit.internal.JUnitProbeInvoker.invokeViaJUnit(JUnitProbeInvoker.java:124)
+	at org.ops4j.pax.exam.invoker.junit.internal.JUnitProbeInvoker.findAndInvoke(JUnitProbeInvoker.java:97)
+	at org.ops4j.pax.exam.invoker.junit.internal.JUnitProbeInvoker.call(JUnitProbeInvoker.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.ops4j.pax.exam.rbc.internal.RemoteBundleContextImpl.remoteCall(RemoteBundleContextImpl.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:324)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:568)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:683)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</error>
+    <system-out><![CDATA[2016-09-29 09:32:51,278 | INFO  | ion(3)-127.0.0.1 | SingleFeatureTest                | 84 - PAXEXAM-PROBE-7abc229c-bc4a-48e4-8481-93fe55c80dee - 0.0.0 | Attempting to add repository file:/home/directv/ncadaptor/features/target/classes/features.xml
+2016-09-29 09:32:51,289 | INFO  | ion(3)-127.0.0.1 | SingleFeatureTest                | 84 - PAXEXAM-PROBE-7abc229c-bc4a-48e4-8481-93fe55c80dee - 0.0.0 | Successfully loaded repository file:/home/directv/ncadaptor/features/target/classes/features.xml
+2016-09-29 09:32:51,289 | INFO  | ion(3)-127.0.0.1 | SingleFeatureTest                | 84 - PAXEXAM-PROBE-7abc229c-bc4a-48e4-8481-93fe55c80dee - 0.0.0 | Attempting to install feature odl-ncadaptor-drools 1.0-SNAPSHOT
+2016-09-29 09:32:53,194 | WARN  | ion(3)-127.0.0.1 | AbstractKieModule                | 110 - org.drools.compiler - 6.2.0.201503042125 | No files found for KieBase KBase
+2016-09-29 09:32:53,245 | WARN  | ion(3)-127.0.0.1 | AbstractKieModule                | 110 - org.drools.compiler - 6.2.0.201503042125 | No files found for KieBase KBase
+KieSession created.
+2016-09-29 09:32:54,216 | WARN  | FelixShutdown    | core                             | 75 - org.apache.aries.jmx.core - 1.1.2 | Task rejected for JMX Notification dispatch of event [org.osgi.framework.ServiceEvent[source=[javax.management.MBeanServer]]] - Dispatcher may have been shutdown
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/directv/.m2/repository/org/apache/karaf/org.apache.karaf.client/3.0.3/org.apache.karaf.client-3.0.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/directv/.m2/repository/org/ops4j/pax/logging/pax-logging-api/1.8.1/pax-logging-api-1.8.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/directv/.m2/repository/org/slf4j/slf4j-jdk14/1.7.7/slf4j-jdk14-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+]]></system-err>
+  </testcase>
+  <testcase name="installFeature" classname="installFeature(org.opendaylight.odlparent.featuretest.SingleFeatureTest)[repoUrl: file:/home/directv/ncadaptor/features/target/classes/features.xml, Feature: odl-ncadaptor-api 1.0-SNAPSHOT]" time="7.212"/>
+  <testcase name="installFeature" classname="installFeature(org.opendaylight.odlparent.featuretest.SingleFeatureTest)[repoUrl: file:/home/directv/ncadaptor/features/target/classes/features.xml, Feature: odl-ncadaptor 1.0-SNAPSHOT]" time="14.679">
+    <error message="org.opendaylight.yang.gen.v1.urn.opendaylight.params.xml.ns.yang.ncadaptor.rev150105.get.node.instance.output.NodeOperDataBuilder not found by ncadaptor-drools [116]" type="java.lang.ClassNotFoundException">java.lang.ClassNotFoundException: org.opendaylight.yang.gen.v1.urn.opendaylight.params.xml.ns.yang.ncadaptor.rev150105.get.node.instance.output.NodeOperDataBuilder not found by ncadaptor-drools [116]
+	at org.apache.felix.framework.BundleWiringImpl.findClassOrResourceByDelegation(BundleWiringImpl.java:1532)
+	at org.apache.felix.framework.BundleWiringImpl.access$400(BundleWiringImpl.java:75)
+	at org.apache.felix.framework.BundleWiringImpl$BundleClassLoader.loadClass(BundleWiringImpl.java:1955)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.opendaylight.ncadaptor.drools.osgi.NcadaptorDroolsImpl.fireRulesKieSession(NcadaptorDroolsImpl.java:13)
+	at org.opendaylight.ncadaptor.drools.osgi.NcadaptorDroolsOsgiActivator.start(NcadaptorDroolsOsgiActivator.java:33)
+	at org.apache.felix.framework.util.SecureAction.startActivator(SecureAction.java:645)
+	at org.apache.felix.framework.Felix.activateBundle(Felix.java:2146)
+	at org.apache.felix.framework.Felix.startBundle(Felix.java:2064)
+	at org.apache.felix.framework.BundleImpl.start(BundleImpl.java:955)
+	at org.apache.felix.framework.BundleImpl.start(BundleImpl.java:942)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.startBundle(FeaturesServiceImpl.java:477)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.installFeatures(FeaturesServiceImpl.java:435)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.installFeature(FeaturesServiceImpl.java:375)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.installFeature(FeaturesServiceImpl.java:364)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.installFeature(FeaturesServiceImpl.java:347)
+	at Proxy06832f6a_53c3_4504_817d_8be575697125.installFeature(Unknown Source)
+	at org.opendaylight.odlparent.featuretest.SingleFeatureTest.installFeature(SingleFeatureTest.java:207)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.ops4j.pax.exam.invoker.junit.internal.ContainerTestRunner.runChild(ContainerTestRunner.java:68)
+	at org.ops4j.pax.exam.invoker.junit.internal.ContainerTestRunner.runChild(ContainerTestRunner.java:37)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.ops4j.pax.exam.invoker.junit.internal.JUnitProbeInvoker.invokeViaJUnit(JUnitProbeInvoker.java:124)
+	at org.ops4j.pax.exam.invoker.junit.internal.JUnitProbeInvoker.findAndInvoke(JUnitProbeInvoker.java:97)
+	at org.ops4j.pax.exam.invoker.junit.internal.JUnitProbeInvoker.call(JUnitProbeInvoker.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.ops4j.pax.exam.rbc.internal.RemoteBundleContextImpl.remoteCall(RemoteBundleContextImpl.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:324)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:568)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:683)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</error>
+    <system-out><![CDATA[2016-09-29 09:33:07,190 | INFO  | ion(3)-127.0.0.1 | SingleFeatureTest                | 84 - PAXEXAM-PROBE-7abc229c-bc4a-48e4-8481-93fe55c80dee - 0.0.0 | Attempting to add repository file:/home/directv/ncadaptor/features/target/classes/features.xml
+2016-09-29 09:33:07,208 | INFO  | ion(3)-127.0.0.1 | SingleFeatureTest                | 84 - PAXEXAM-PROBE-7abc229c-bc4a-48e4-8481-93fe55c80dee - 0.0.0 | Successfully loaded repository file:/home/directv/ncadaptor/features/target/classes/features.xml
+2016-09-29 09:33:07,209 | INFO  | ion(3)-127.0.0.1 | SingleFeatureTest                | 84 - PAXEXAM-PROBE-7abc229c-bc4a-48e4-8481-93fe55c80dee - 0.0.0 | Attempting to install feature odl-ncadaptor 1.0-SNAPSHOT
+2016-09-29 09:33:15,401 | WARN  | ion(3)-127.0.0.1 | AbstractKieModule                | 110 - org.drools.compiler - 6.2.0.201503042125 | No files found for KieBase KBase
+2016-09-29 09:33:15,446 | WARN  | ion(3)-127.0.0.1 | AbstractKieModule                | 110 - org.drools.compiler - 6.2.0.201503042125 | No files found for KieBase KBase
+KieSession created.
+2016-09-29 09:33:16,172 | WARN  | FelixShutdown    | core                             | 75 - org.apache.aries.jmx.core - 1.1.2 | Task rejected for JMX Notification dispatch of event [org.osgi.framework.ServiceEvent[source=[javax.management.MBeanServer]]] - Dispatcher may have been shutdown
+]]></system-out>
+  </testcase>
+  <testcase name="installFeature" classname="installFeature(org.opendaylight.odlparent.featuretest.SingleFeatureTest)[repoUrl: file:/home/directv/ncadaptor/features/target/classes/features.xml, Feature: odl-ncadaptor-rest 1.0-SNAPSHOT]" time="12.176">
+    <error message="org.opendaylight.yang.gen.v1.urn.opendaylight.params.xml.ns.yang.ncadaptor.rev150105.get.node.instance.output.NodeOperDataBuilder not found by ncadaptor-drools [116]" type="java.lang.ClassNotFoundException">java.lang.ClassNotFoundException: org.opendaylight.yang.gen.v1.urn.opendaylight.params.xml.ns.yang.ncadaptor.rev150105.get.node.instance.output.NodeOperDataBuilder not found by ncadaptor-drools [116]
+	at org.apache.felix.framework.BundleWiringImpl.findClassOrResourceByDelegation(BundleWiringImpl.java:1532)
+	at org.apache.felix.framework.BundleWiringImpl.access$400(BundleWiringImpl.java:75)
+	at org.apache.felix.framework.BundleWiringImpl$BundleClassLoader.loadClass(BundleWiringImpl.java:1955)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.opendaylight.ncadaptor.drools.osgi.NcadaptorDroolsImpl.fireRulesKieSession(NcadaptorDroolsImpl.java:13)
+	at org.opendaylight.ncadaptor.drools.osgi.NcadaptorDroolsOsgiActivator.start(NcadaptorDroolsOsgiActivator.java:33)
+	at org.apache.felix.framework.util.SecureAction.startActivator(SecureAction.java:645)
+	at org.apache.felix.framework.Felix.activateBundle(Felix.java:2146)
+	at org.apache.felix.framework.Felix.startBundle(Felix.java:2064)
+	at org.apache.felix.framework.BundleImpl.start(BundleImpl.java:955)
+	at org.apache.felix.framework.BundleImpl.start(BundleImpl.java:942)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.startBundle(FeaturesServiceImpl.java:477)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.installFeatures(FeaturesServiceImpl.java:435)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.installFeature(FeaturesServiceImpl.java:375)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.installFeature(FeaturesServiceImpl.java:364)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.installFeature(FeaturesServiceImpl.java:347)
+	at Proxy8dcf1a81_deef_44d9_ac01_cebd46d359bc.installFeature(Unknown Source)
+	at org.opendaylight.odlparent.featuretest.SingleFeatureTest.installFeature(SingleFeatureTest.java:207)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.ops4j.pax.exam.invoker.junit.internal.ContainerTestRunner.runChild(ContainerTestRunner.java:68)
+	at org.ops4j.pax.exam.invoker.junit.internal.ContainerTestRunner.runChild(ContainerTestRunner.java:37)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.ops4j.pax.exam.invoker.junit.internal.JUnitProbeInvoker.invokeViaJUnit(JUnitProbeInvoker.java:124)
+	at org.ops4j.pax.exam.invoker.junit.internal.JUnitProbeInvoker.findAndInvoke(JUnitProbeInvoker.java:97)
+	at org.ops4j.pax.exam.invoker.junit.internal.JUnitProbeInvoker.call(JUnitProbeInvoker.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.ops4j.pax.exam.rbc.internal.RemoteBundleContextImpl.remoteCall(RemoteBundleContextImpl.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:324)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:568)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:683)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</error>
+    <system-out><![CDATA[2016-09-29 09:33:20,573 | INFO  | ion(3)-127.0.0.1 | SingleFeatureTest                | 84 - PAXEXAM-PROBE-7abc229c-bc4a-48e4-8481-93fe55c80dee - 0.0.0 | Attempting to add repository file:/home/directv/ncadaptor/features/target/classes/features.xml
+2016-09-29 09:33:20,584 | INFO  | ion(3)-127.0.0.1 | SingleFeatureTest                | 84 - PAXEXAM-PROBE-7abc229c-bc4a-48e4-8481-93fe55c80dee - 0.0.0 | Successfully loaded repository file:/home/directv/ncadaptor/features/target/classes/features.xml
+2016-09-29 09:33:20,585 | INFO  | ion(3)-127.0.0.1 | SingleFeatureTest                | 84 - PAXEXAM-PROBE-7abc229c-bc4a-48e4-8481-93fe55c80dee - 0.0.0 | Attempting to install feature odl-ncadaptor-rest 1.0-SNAPSHOT
+2016-09-29 09:33:27,573 | WARN  | ion(3)-127.0.0.1 | AbstractKieModule                | 110 - org.drools.compiler - 6.2.0.201503042125 | No files found for KieBase KBase
+2016-09-29 09:33:27,619 | WARN  | ion(3)-127.0.0.1 | AbstractKieModule                | 110 - org.drools.compiler - 6.2.0.201503042125 | No files found for KieBase KBase
+KieSession created.
+ERROR: Bundle org.apache.servicemix.specs.activation-api-1.1 [86] Error stopping bundle. (java.lang.ExceptionInInitializerError)
+2016-09-29 09:33:28,367 | WARN  | FelixShutdown    | core                             | 75 - org.apache.aries.jmx.core - 1.1.2 | Task rejected for JMX Notification dispatch of event [org.osgi.framework.ServiceEvent[source=[javax.management.MBeanServer]]] - Dispatcher may have been shutdown
+]]></system-out>
+    <system-err><![CDATA[java.lang.ExceptionInInitializerError
+	at org.apache.servicemix.specs.activation.Activator.stop(Activator.java:49)
+	at org.apache.felix.framework.util.SecureAction.stopActivator(SecureAction.java:667)
+	at org.apache.felix.framework.Felix.stopBundle(Felix.java:2530)
+	at org.apache.felix.framework.Felix.uninstallBundle(Felix.java:2632)
+	at org.apache.felix.framework.BundleImpl.uninstall(BundleImpl.java:1022)
+	at org.apache.karaf.features.internal.BundleManager.uninstall(BundleManager.java:391)
+	at org.apache.karaf.features.internal.BundleManager.uninstall(BundleManager.java:385)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.cleanUpOnFailure(FeaturesServiceImpl.java:501)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.installFeatures(FeaturesServiceImpl.java:454)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.installFeature(FeaturesServiceImpl.java:375)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.installFeature(FeaturesServiceImpl.java:364)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.installFeature(FeaturesServiceImpl.java:347)
+	at Proxy8dcf1a81_deef_44d9_ac01_cebd46d359bc.installFeature(Unknown Source)
+	at org.opendaylight.odlparent.featuretest.SingleFeatureTest.installFeature(SingleFeatureTest.java:207)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.ops4j.pax.exam.invoker.junit.internal.ContainerTestRunner.runChild(ContainerTestRunner.java:68)
+	at org.ops4j.pax.exam.invoker.junit.internal.ContainerTestRunner.runChild(ContainerTestRunner.java:37)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.ops4j.pax.exam.invoker.junit.internal.JUnitProbeInvoker.invokeViaJUnit(JUnitProbeInvoker.java:124)
+	at org.ops4j.pax.exam.invoker.junit.internal.JUnitProbeInvoker.findAndInvoke(JUnitProbeInvoker.java:97)
+	at org.ops4j.pax.exam.invoker.junit.internal.JUnitProbeInvoker.call(JUnitProbeInvoker.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.ops4j.pax.exam.rbc.internal.RemoteBundleContextImpl.remoteCall(RemoteBundleContextImpl.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:324)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:568)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:683)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at org.apache.felix.framework.BundleRevisionImpl.getResourcesLocal(BundleRevisionImpl.java:533)
+	at org.apache.felix.framework.BundleWiringImpl.findResourcesByDelegation(BundleWiringImpl.java:1173)
+	at org.apache.felix.framework.BundleWiringImpl.getResourcesByDelegation(BundleWiringImpl.java:1083)
+	at org.apache.felix.framework.BundleWiringImpl$BundleClassLoaderJava5.getResources(BundleWiringImpl.java:1870)
+	at javax.activation.MailcapCommandMap.<init>(MailcapCommandMap.java:71)
+	at javax.activation.CommandMap.<clinit>(CommandMap.java:26)
+	... 60 more
+]]></system-err>
+  </testcase>
+  <testcase name="installFeature" classname="installFeature(org.opendaylight.odlparent.featuretest.SingleFeatureTest)[repoUrl: file:/home/directv/ncadaptor/features/target/classes/features.xml, Feature: odl-ncadaptor-ui 1.0-SNAPSHOT]" time="13.587">
+    <error message="org.opendaylight.yang.gen.v1.urn.opendaylight.params.xml.ns.yang.ncadaptor.rev150105.get.node.instance.output.NodeOperDataBuilder not found by ncadaptor-drools [116]" type="java.lang.ClassNotFoundException">java.lang.ClassNotFoundException: org.opendaylight.yang.gen.v1.urn.opendaylight.params.xml.ns.yang.ncadaptor.rev150105.get.node.instance.output.NodeOperDataBuilder not found by ncadaptor-drools [116]
+	at org.apache.felix.framework.BundleWiringImpl.findClassOrResourceByDelegation(BundleWiringImpl.java:1532)
+	at org.apache.felix.framework.BundleWiringImpl.access$400(BundleWiringImpl.java:75)
+	at org.apache.felix.framework.BundleWiringImpl$BundleClassLoader.loadClass(BundleWiringImpl.java:1955)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.opendaylight.ncadaptor.drools.osgi.NcadaptorDroolsImpl.fireRulesKieSession(NcadaptorDroolsImpl.java:13)
+	at org.opendaylight.ncadaptor.drools.osgi.NcadaptorDroolsOsgiActivator.start(NcadaptorDroolsOsgiActivator.java:33)
+	at org.apache.felix.framework.util.SecureAction.startActivator(SecureAction.java:645)
+	at org.apache.felix.framework.Felix.activateBundle(Felix.java:2146)
+	at org.apache.felix.framework.Felix.startBundle(Felix.java:2064)
+	at org.apache.felix.framework.BundleImpl.start(BundleImpl.java:955)
+	at org.apache.felix.framework.BundleImpl.start(BundleImpl.java:942)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.startBundle(FeaturesServiceImpl.java:477)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.installFeatures(FeaturesServiceImpl.java:435)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.installFeature(FeaturesServiceImpl.java:375)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.installFeature(FeaturesServiceImpl.java:364)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.installFeature(FeaturesServiceImpl.java:347)
+	at Proxy92dcc25f_3cbe_4b4c_8d8e_fca2f148f993.installFeature(Unknown Source)
+	at org.opendaylight.odlparent.featuretest.SingleFeatureTest.installFeature(SingleFeatureTest.java:207)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.ops4j.pax.exam.invoker.junit.internal.ContainerTestRunner.runChild(ContainerTestRunner.java:68)
+	at org.ops4j.pax.exam.invoker.junit.internal.ContainerTestRunner.runChild(ContainerTestRunner.java:37)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.ops4j.pax.exam.invoker.junit.internal.JUnitProbeInvoker.invokeViaJUnit(JUnitProbeInvoker.java:124)
+	at org.ops4j.pax.exam.invoker.junit.internal.JUnitProbeInvoker.findAndInvoke(JUnitProbeInvoker.java:97)
+	at org.ops4j.pax.exam.invoker.junit.internal.JUnitProbeInvoker.call(JUnitProbeInvoker.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.ops4j.pax.exam.rbc.internal.RemoteBundleContextImpl.remoteCall(RemoteBundleContextImpl.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:324)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:568)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:683)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</error>
+    <system-out><![CDATA[2016-09-29 09:33:32,905 | INFO  | ion(3)-127.0.0.1 | SingleFeatureTest                | 84 - PAXEXAM-PROBE-7abc229c-bc4a-48e4-8481-93fe55c80dee - 0.0.0 | Attempting to add repository file:/home/directv/ncadaptor/features/target/classes/features.xml
+2016-09-29 09:33:32,918 | INFO  | ion(3)-127.0.0.1 | SingleFeatureTest                | 84 - PAXEXAM-PROBE-7abc229c-bc4a-48e4-8481-93fe55c80dee - 0.0.0 | Successfully loaded repository file:/home/directv/ncadaptor/features/target/classes/features.xml
+2016-09-29 09:33:32,918 | INFO  | ion(3)-127.0.0.1 | SingleFeatureTest                | 84 - PAXEXAM-PROBE-7abc229c-bc4a-48e4-8481-93fe55c80dee - 0.0.0 | Attempting to install feature odl-ncadaptor-ui 1.0-SNAPSHOT
+2016-09-29 09:33:41,135 | WARN  | ion(3)-127.0.0.1 | AbstractKieModule                | 110 - org.drools.compiler - 6.2.0.201503042125 | No files found for KieBase KBase
+2016-09-29 09:33:41,185 | WARN  | ion(3)-127.0.0.1 | AbstractKieModule                | 110 - org.drools.compiler - 6.2.0.201503042125 | No files found for KieBase KBase
+KieSession created.
+ERROR: Bundle org.apache.servicemix.specs.activation-api-1.1 [86] Error stopping bundle. (java.lang.ExceptionInInitializerError)
+2016-09-29 09:33:41,924 | WARN  | FelixShutdown    | core                             | 75 - org.apache.aries.jmx.core - 1.1.2 | Task rejected for JMX Notification dispatch of event [org.osgi.framework.ServiceEvent[source=[javax.management.MBeanServer]]] - Dispatcher may have been shutdown
+]]></system-out>
+    <system-err><![CDATA[java.lang.ExceptionInInitializerError
+	at org.apache.servicemix.specs.activation.Activator.stop(Activator.java:49)
+	at org.apache.felix.framework.util.SecureAction.stopActivator(SecureAction.java:667)
+	at org.apache.felix.framework.Felix.stopBundle(Felix.java:2530)
+	at org.apache.felix.framework.Felix.uninstallBundle(Felix.java:2632)
+	at org.apache.felix.framework.BundleImpl.uninstall(BundleImpl.java:1022)
+	at org.apache.karaf.features.internal.BundleManager.uninstall(BundleManager.java:391)
+	at org.apache.karaf.features.internal.BundleManager.uninstall(BundleManager.java:385)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.cleanUpOnFailure(FeaturesServiceImpl.java:501)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.installFeatures(FeaturesServiceImpl.java:454)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.installFeature(FeaturesServiceImpl.java:375)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.installFeature(FeaturesServiceImpl.java:364)
+	at org.apache.karaf.features.internal.FeaturesServiceImpl.installFeature(FeaturesServiceImpl.java:347)
+	at Proxy92dcc25f_3cbe_4b4c_8d8e_fca2f148f993.installFeature(Unknown Source)
+	at org.opendaylight.odlparent.featuretest.SingleFeatureTest.installFeature(SingleFeatureTest.java:207)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.ops4j.pax.exam.invoker.junit.internal.ContainerTestRunner.runChild(ContainerTestRunner.java:68)
+	at org.ops4j.pax.exam.invoker.junit.internal.ContainerTestRunner.runChild(ContainerTestRunner.java:37)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.ops4j.pax.exam.invoker.junit.internal.JUnitProbeInvoker.invokeViaJUnit(JUnitProbeInvoker.java:124)
+	at org.ops4j.pax.exam.invoker.junit.internal.JUnitProbeInvoker.findAndInvoke(JUnitProbeInvoker.java:97)
+	at org.ops4j.pax.exam.invoker.junit.internal.JUnitProbeInvoker.call(JUnitProbeInvoker.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.ops4j.pax.exam.rbc.internal.RemoteBundleContextImpl.remoteCall(RemoteBundleContextImpl.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:324)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:568)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:683)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at org.apache.felix.framework.BundleRevisionImpl.getResourcesLocal(BundleRevisionImpl.java:533)
+	at org.apache.felix.framework.BundleWiringImpl.findResourcesByDelegation(BundleWiringImpl.java:1173)
+	at org.apache.felix.framework.BundleWiringImpl.getResourcesByDelegation(BundleWiringImpl.java:1083)
+	at org.apache.felix.framework.BundleWiringImpl$BundleClassLoaderJava5.getResources(BundleWiringImpl.java:1870)
+	at javax.activation.MailcapCommandMap.<init>(MailcapCommandMap.java:71)
+	at javax.activation.CommandMap.<clinit>(CommandMap.java:26)
+	... 60 more
+]]></system-err>
+  </testcase>
+</testsuite>

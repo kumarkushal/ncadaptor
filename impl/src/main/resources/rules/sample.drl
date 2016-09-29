@@ -1,0 +1,10 @@
+package rules;
+
+import org.opendaylight.yang.gen.v1.urn.opendaylight.params.xml.ns.yang.ncadaptor.rev150105.get.node.instance.output.NodeOperDataBuilder
+
+rule "set-json"
+when
+    nodeOperDataBuilder : NodeOperDataBuilder( getDeviceName() == "QFX", getDeviceFamily() == "OFSwitch" )
+then
+	nodeOperDataBuilder.setJsonUrl("/home/sdn/sample.json");
+end

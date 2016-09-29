@@ -1,0 +1,6 @@
+org/opendaylight/ncadaptor/drools/model/Person.class
+org/opendaylight/ncadaptor/drools/osgi/NcadaptorDroolsImpl.class
+org/opendaylight/ncadaptor/drools/osgi/NcadaptorDroolsOsgiActivator.class
+org/opendaylight/ncadaptor/drools/osgi/NcadaptorDroolsImplMain.class
+org/opendaylight/ncadaptor/drools/rule/EntityHelper.class
+org/opendaylight/ncadaptor/drools/model/Cheese.class

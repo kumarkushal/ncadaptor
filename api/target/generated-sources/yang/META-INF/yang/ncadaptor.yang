@@ -1,0 +1,144 @@
+module ncadaptor {
+    yang-version 1;
+    namespace "urn:opendaylight:params:xml:ns:yang:ncadaptor";
+    prefix "ncadaptor";
+
+    revision "2015-01-05" {
+        description "Initial revision of ncadaptor model";
+    }
+    rpc modify-rpc-payload {
+        input {
+            leaf initial-rpc-payload {
+                type string;
+            }
+
+            leaf device-name {
+                type string;
+                description "Device name and node name should have exact match";
+            }
+        }
+
+        output {
+            leaf final-rpc-payload {
+                type string;
+            }
+        }
+    }
+
+    rpc get-node-instance {
+        description
+                "Retreives required config/operational information from datastore";
+
+        input {
+            leaf node-name {
+                type string;
+                description "Id of mounted netconf device";
+            }
+        }
+
+        output {
+            container node-cfg-data {
+                leaf jsonURI {
+                    type string;
+                    config true;
+                    description "Indicates the path of the JSON file containing information for
+                                        various tags and operations in the RPC XML sent to the device.
+                                        The value of this leaf is set by the Bussiness Rules engine when
+                                        a rule is fired, to the cell value(under heading \"Set JSON URI\")
+                                        in the rules table(excel)";
+                }
+            }
+
+            container node-oper-data {
+
+                description "Operational information about the device";
+
+                leaf oper-node {
+                    type boolean;
+                    default true;
+                    description "Default true indicates the device is operational ";
+                }
+
+                leaf device-name {
+                    type string;
+                    config false;
+                    description "name of the netconf device";
+                }
+
+                leaf device-family {
+                    type string;
+                    config false;
+                    description "Device family - custom family/groups to segregate devices";
+                }
+
+                leaf yang-revision {
+                    type string;
+                    config false;
+                    description "Any one yang-revision of the device model to be used .ex. 2016-07-22";
+                }
+
+                leaf deviceVendor {
+                    type string;
+                    config false;
+                    description "Device vendor details such as Cisco, Juniper and Brocade";
+                }
+
+                leaf deviceOS {
+                    type string;
+                    config false;
+                    description "Device operating system such as IOS, JunOS etc.";
+                }
+
+                leaf deviceOSVersion {
+                    type string;
+                    config false;
+                    description "Version of the propriety OS on the device";
+                }
+
+                leaf json-url {
+                    type string;
+                    description "Local path for the JSON file in string format. This URL is set
+                                        by user in the excel file";
+                }
+            }
+        }
+    }
+
+    rpc setup-kie-base {
+        input {
+            leaf kie-session-name {
+                type string;
+                description "Kie session instance ex. ksession-rules";
+            }
+        }
+        output {
+            leaf kie-session-status {
+                type boolean;
+                default false;
+                description "Indicates if kie-session instance is created or not";
+            }
+        }
+    }
+
+    rpc parse-json-file {
+        input {
+            leaf json-url {
+                type string;
+                description "JSON URL to fetch JSON file";
+            }
+
+            leaf init-rpc {
+                type string;
+                description "Initial RPC XML";
+            }
+        }
+        output {
+            leaf mod-rpc {
+                type string;
+                description "RPC XML as string";
+            }
+        }
+    }
+
+
+}
